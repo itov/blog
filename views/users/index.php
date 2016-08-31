@@ -2,7 +2,7 @@
 
 <h1><?=htmlspecialchars($this->title)?></h1>
 
-<table>
+<table class="new-post-block">
     <tr>
         <th>ID</th>
         <th>Username</th>
