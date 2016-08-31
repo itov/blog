@@ -12,14 +12,15 @@
 <body>
 <header>
     <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></a>
-    <a href="<?=APP_ROOT?>/">Home</a>
+    <a class="single-menu-element-link" href="<?=APP_ROOT?>/"><span class="single-menu-element">Home</span></a>
     <?php if ($this->isLoggedIn) : ?>
-        <a href="<?=APP_ROOT?>/posts">Posts</a>
-        <a href="<?=APP_ROOT?>/posts/create">Create Post</a>
-        <a href="<?=APP_ROOT?>/users">Users</a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/posts"><span class="single-menu-element">Posts</span></a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/posts/create"><span class="single-menu-element">Create Post</span></a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/users"><span class="single-menu-element">Users</span></a>
     <?php else: ?>
-        <a href="<?=APP_ROOT?>/users/login">Login</a>
-        <a href="<?=APP_ROOT?>/users/register">Register</a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/home/posts"><span class="single-menu-element">Posts</span></a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/users/login"><span class="single-menu-element">Login</span></a>
+        <a class="single-menu-element-link" href="<?=APP_ROOT?>/users/register"><span class="single-menu-element">Register</span></a>
     <?php endif; ?>
     <?php if ($this->isLoggedIn) : ?>
         <div id="logged-in-info">

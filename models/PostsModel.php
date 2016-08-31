@@ -2,7 +2,7 @@
 
 class PostsModel extends HomeModel
 {
-    public function getAll()
+    function getAll()
     {
         $statement = self::$db->query(
             "SELECT posts.id, title, content, date, full_name, user_id " .

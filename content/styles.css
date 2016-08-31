@@ -1,3 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+
+
+
 body>header {
     background: #eee;
     padding: 5px;
@@ -11,10 +63,76 @@ body>header>a>img, body>header a  {
 }
 
 body>footer {
+    width: 100%;
     background: #eee;
+    position: relative;
     padding: 5px;
     margin: 10px 0;
+    bottom: 0;
     text-align: center;
+}
+
+.single-menu-element-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.single-menu-element-link:hover {
+    font-weight: 900;
+    transition: background 0.2s ease,
+    padding 0.1s linear;
+}
+
+.single-menu-element:hover {
+    font-weight: 900;
+    background-color: #019c8c;
+    height: 40px;
+    line-height: 32px;
+    transition: background 0.2s ease, padding 0.1s linear;
+}
+
+.single-menu-element {
+    padding: 10px;
+}
+
+.title {
+    font: 32px Oswald;
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+.subtitle {
+    font: 16px Lato;
+    font-weight: 100;
+    margin-left: 3%;
+    margin: 20px;
+}
+
+.content {
+    padding-top: 2.5%;
+    font: 16px Lato;
+    font-weight: 500;
+    width: 80%;
+    margin-left: 3%;
+    word-break: normal;
+}
+
+.readMore {
+    font: 16px Lato;
+    color: white;
+    background-color: #06c0ab;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    text-decoration: none;
+}
+
+.readMore:hover {
+    background-color: #565656;
 }
 
 table th, table td {

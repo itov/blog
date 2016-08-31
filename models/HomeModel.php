@@ -22,4 +22,13 @@ class HomeModel extends BaseModel
         $result = $statement->get_result()->fetch_assoc();
         return $result;
     }
+
+    function getAllPosts()
+    {
+        $statement = self::$db->query(
+            "SELECT posts.id, title, content, date, full_name " .
+            "FROM posts LEFT JOIN users ON posts.user_id = users.id " .
+            "ORDER BY date DESC");
+        return $statement->fetch_all(MYSQLI_ASSOC);
+    }
 }

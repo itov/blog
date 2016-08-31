@@ -11,14 +11,14 @@
 
 <main>
     <?php foreach($this->posts as $post) : ?>
-        <h1><?=htmlentities($post['title'])?></h1>
-        <p><i>Posted on</i>
+        <h3 class="title"><?=htmlentities($post['title'])?></h3>
+        <p class="subtitle"><i>Posted on</i>
         <?=htmlentities($post['date'])?>
             <i>by</i>
             <?=htmlentities($post['full_name'])?>
 
         </p>
-        <p><?=$post['content']?></p>
+        <p class="content"><?=$post['content']?></p>
     <?php endforeach ?>
     
     
