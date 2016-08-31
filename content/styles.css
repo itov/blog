@@ -53,6 +53,7 @@ q:before, q:after {
 body>header {
     background: #eee;
     padding: 5px;
+    font: 16px Oswald;
 }
 
 body>header>a>img, body>header a  {
@@ -63,6 +64,7 @@ body>header>a>img, body>header a  {
 }
 
 body>footer {
+    font: 12px Oswald;
     width: 100%;
     background: #eee;
     position: relative;
@@ -86,9 +88,11 @@ body>footer {
 
 .single-menu-element:hover {
     font-weight: 900;
-    background-color: #019c8c;
+    background-color: #49acff;
     height: 40px;
     line-height: 32px;
+    border: none;
+    border-radius: 5px;
     transition: background 0.2s ease, padding 0.1s linear;
 }
 
@@ -100,17 +104,19 @@ body>footer {
     font: 32px Oswald;
     font-weight: 600;
     margin-left: 2%;
+    padding-top: 1%;
 }
 
 .subtitle {
     font: 16px Lato;
     font-weight: 100;
     margin-left: 3%;
-    margin: 20px;
+    margin: 15px;
 }
 
 .content {
-    padding-top: 2.5%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
     font: 16px Lato;
     font-weight: 500;
     width: 80%;
@@ -121,10 +127,11 @@ body>footer {
 .readMore {
     font: 16px Lato;
     color: white;
-    background-color: #06c0ab;
+    background-color: #49acff;
     padding: 8px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    margin-left: 4%;
     border: none;
     border-radius: 30px;
     width: 50%;

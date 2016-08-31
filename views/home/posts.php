@@ -12,6 +12,7 @@
                     <i>by</i>
                     <?=htmlentities($post['full_name'])?>
                 </p>
+                <p class="content"><?=cutLongText($post['content'])?></p>
                 <a class="readMore" href="<?=APP_ROOT?>/home/view/<?=$post['id']?>">Read more</a></li>
         </ul>
             <?php endforeach ?>
