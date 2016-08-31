@@ -1,5 +1,5 @@
 <main>
-    <table>
+    <table class="new-post-block">
         <tr>
             <th>ID</th>
             <th>Title</th>
@@ -19,7 +19,6 @@
                     <a href="<?=APP_ROOT?>/posts/view/<?=htmlspecialchars($post['id'])?>">[View]</a>
                     <a href="<?=APP_ROOT?>/posts/edit/<?=htmlspecialchars($post['id'])?>">[Edit]</a>
                     <a href="<?=APP_ROOT?>/posts/delete/<?=htmlspecialchars($post['id'])?>">[Delete]</a>
-
                 </td>
             </tr>
         <?php endforeach ?>

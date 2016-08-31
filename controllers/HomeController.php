@@ -19,7 +19,6 @@ class HomeController extends BaseController
 
     function posts() {
         $posts = $this->model->getAllPosts();
-        $this->posts = array_slice($posts, 0 , 3);
         $this->AllPostsView = $posts;
     }
 }
