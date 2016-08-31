@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="XAMPP Server">
+  <component name="PublishConfigData" serverName="XAMPP12">
     <serverData>
-      <paths name="XAMPP Server">
+      <paths name="Apache XAMPP Web Server">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="XAMPP12">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="blog" />

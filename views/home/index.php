@@ -11,7 +11,7 @@
 
 <main>
     <?php foreach($this->posts as $post) : ?>
-        <h3 class="title"><?=htmlentities($post['title'])?></h3>
+        <h1 class="title"><?=htmlentities($post['title'])?></h1>
         <p class="subtitle"><i>Posted on</i>
         <?=htmlentities($post['date'])?>
             <i>by</i>
