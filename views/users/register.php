@@ -11,5 +11,5 @@
         <input type="password" name="password_confirm" required /></div>
     <div>Full name: 
         <input type="text" name="full_name" /></div>
-    <div><input type="submit" value="Login"></div>
+    <div><input type="submit" value="Register"></div>
 </form>

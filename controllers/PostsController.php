@@ -89,4 +89,13 @@ class PostsController extends BaseController
         }
         $this->post = $post;
     }
+
+    function view(int $id) {
+        $post = $this->model->getPostById($id);
+        if(!$post) {
+            $this->addErrorMessage("Error: invalid post id.");
+            $this->redirect("");
+        }
+        $this->post = $post;
+    }
 }

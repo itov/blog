@@ -16,6 +16,7 @@
                 <td><?=htmlspecialchars($post['date'])?></td>
                 <td><?=htmlspecialchars($post['full_name'])?></td>
                 <td>
+                    <a href="<?=APP_ROOT?>/posts/view/<?=htmlspecialchars($post['id'])?>">[View]</a>
                     <a href="<?=APP_ROOT?>/posts/edit/<?=htmlspecialchars($post['id'])?>">[Edit]</a>
                     <a href="<?=APP_ROOT?>/posts/delete/<?=htmlspecialchars($post['id'])?>">[Delete]</a>
 
