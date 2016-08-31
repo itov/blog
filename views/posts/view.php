@@ -8,4 +8,4 @@
     <?=htmlentities($this->post['full_name'])?>
 </p>
 <p><?=$this->post['content']?></p>
-<div><a class="button" href="<?=APP_ROOT?>/posts">Back</a></div>
+<div><a href="<?=APP_ROOT?>/posts">[Back]</a></div>
