@@ -147,6 +147,10 @@ body>footer {
     background-color: #49acff;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 .news {
     width: 80%;
     list-style: none;
@@ -226,7 +230,11 @@ body>main:after {
     border-radius: 15px;
     background-color: #f2f2f2;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+<<<<<<< HEAD
     margin: 0 auto;
+=======
+    margin: 10% auto;
+>>>>>>> origin/master
     width: 35%;
     height: 55%;
     padding: 10px;
@@ -242,7 +250,11 @@ form {
 .title-form {
     font: 18px Oswald;
     font-weight: 400;
+<<<<<<< HEAD
     color: #49acff;
+=======
+    color: #019c8c;
+>>>>>>> origin/master
     padding: 0 5px 5px;
     text-align: center;
     margin-bottom: 15px;
@@ -251,6 +263,10 @@ form {
 input {
     border-radius: 30px;
     border: 3px solid #f2f2f2;
+<<<<<<< HEAD
+=======
+    width: 60%;
+>>>>>>> origin/master
     height: 35px;
     margin: 0 auto 10px;
     text-align: center;
@@ -281,12 +297,26 @@ button:hover {
 
 .form-link {
     text-decoration: none;
+<<<<<<< HEAD
     color: #49acff;
+=======
+    color: #048e76;
+>>>>>>> origin/master
     font: 16px Lato;
     font-weight: 900;
     padding: 10px;
 }
 
+<<<<<<< HEAD
+=======
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+>>>>>>> origin/master
 #register-title {
     width: 200px;
 }
@@ -296,7 +326,11 @@ button:hover {
 }
 
 .new-post-block {
+<<<<<<< HEAD
     background: #f2f2f2;
+=======
+    background: #dadada;
+>>>>>>> origin/master
     width: 60%;
     margin: 0 auto;
     padding: 20px;
@@ -311,6 +345,15 @@ button:hover {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+#post-form {
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+>>>>>>> origin/master
 .single-element-form {
     display: inline-block;
     width: 40%;
@@ -333,12 +376,20 @@ input:focus {
     font: 12px Lato;
     font-weight: 100;
     outline: none;
+<<<<<<< HEAD
     border: 3px solid #49acff;
+=======
+    border: 3px solid #06c0ab;
+>>>>>>> origin/master
 }
 
 textarea:focus {
     font: 12px Lato;
     font-weight: 100;
     outline: none;
+<<<<<<< HEAD
     border: 3px solid #49acff;
+=======
+    border: 3px solid #06c0ab;
+>>>>>>> origin/master
 }

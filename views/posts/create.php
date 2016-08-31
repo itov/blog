@@ -4,6 +4,7 @@
 
 <div class="new-post-block">
 <form method="post">
+<<<<<<< HEAD
     <h1 class="title-form">Title:</h1>
     <input type="text" name="post_title" value="" placeholder="Title" id="new-post-title" />
     <h1 class="title-form">Content:</h1>
@@ -12,3 +13,12 @@
         <a class="button" href="<?=APP_ROOT?>/posts">Cancel</a></div>
 </form>
     </div>
+=======
+    <div>Title:</div>
+    <input type="text" name="post_title" />
+    <div>Content:</div>
+    <textarea rows="10" name="post_content"></textarea>
+    <div><input class="button" type="submit" value="Create" />
+        <a class="button" href="<?=APP_ROOT?>/posts">Cancel</a></div>
+</form>
+>>>>>>> origin/master
