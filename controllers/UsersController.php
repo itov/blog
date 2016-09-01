@@ -63,4 +63,48 @@ class UsersController extends BaseController
         $this->authorize();
         $this->users = $this->model->getAll();
     }
+
+    function delete(int $id) {
+        if ($this->isPost) {
+            if ($this->model->delete($id)) {
+                $this->addInfoMessage("User deleted.");
+            } else {
+                $this->addErrorMessage("Error: cannot delete user.");
+            }
+            $this->redirect('users');
+        }
+        else {
+            $user = $this->model->getById($id);
+            if (! $user) {
+                $this->addErrorMessage("Error: user does not exist.");
+                $this->redirect("users");
+            }
+            $this->user = $user;
+        }
+    }
+
+    function edit(int $id) {
+        if ($this->isPost) {
+            $username = $_POST['username'];
+            if (strlen($username) < 1) {
+                $this->setValidationError("username", "Username cannot be empty!");
+            }
+            $full_name = $_POST['full_name'];
+
+            if ($this->formValid()) {
+                if ($this->model->edit($id, $username, $full_name)) {
+                    $this->addInfoMessage("User edited.");
+                } else {
+                    $this->addErrorMessage("Error: cannot edit user.");
+                }
+                $this->redirect('users');
+            }
+        }
+        $user = $this->model->getById($id);
+        if (! $user) {
+            $this->addErrorMessage("Error: user does not exist.");
+            $this->redirect("users");
+        }
+        $this->user = $user;
+    }
 }
