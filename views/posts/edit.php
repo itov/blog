@@ -14,5 +14,9 @@
     <input type="text" name="user_id" value="<?=htmlspecialchars($this->post['user_id'])?>" />
     <div><input class="button" type="submit" value="Edit">
     <a class="button" href="<?=APP_ROOT?>/posts">Cancel</a></div>
+<<<<<<< HEAD
 </form>
 </div>
+=======
+</form>
+>>>>>>> origin/master
