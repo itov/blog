@@ -1,5 +1,5 @@
 <?php $this->title = 'Edit Existing Post'; ?>
-
+<script src="//cdn.ckeditor.com/4.5.10/standard/ckeditor.js"></script>
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 <div class="new-post-block">
@@ -8,6 +8,7 @@
         <input type="text" name="post_title" id="new-post-title" value="<?=htmlspecialchars($this->post['title'])?>" />
         <div>Content:</div>
         <textarea rows="10" name="post_content" class="content-field"><?=htmlspecialchars($this->post['content'])?></textarea>
+        <script type="text/javascript">CKEDITOR.replace('post_content')</script>
         <div>Date (yyyy-MM-dd hh:mm:ss):</div>
         <input type="text" name="post_date" value="<?=htmlspecialchars($this->post['date'])?>" />
         <div>Author ID:</div>
