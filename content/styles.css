@@ -201,6 +201,7 @@ body>aside {
 }
 
 body>aside h2 {
+    font: 26px Lato;
     margin: 5px 0px 15px 0px;
 }
 
@@ -210,6 +211,11 @@ body>aside a {
     display: block;
     margin: 5px 0px;
     text-decoration: none;
+}
+
+
+body>aside a:hover {
+    color: #ffffff;
 }
 
 body>main:after {
